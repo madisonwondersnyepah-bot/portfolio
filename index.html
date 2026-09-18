@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madz — Software Engineer</title>
+<meta name="description" content="Portfolio of Madz, a software engineering student and developer based in Kigali, Rwanda.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="frame">
+
+  <!-- Left rail: identity, nav, live status -->
+  <aside class="rail">
+    <div class="rail-top">
+      <a href="#top" class="mark">Madz<span class="mark-dot">.</span></a>
+      <p class="role">Software Engineering student<br>Kigali, Rwanda</p>
+    </div>
+
+    <nav class="rail-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="status" aria-label="Current status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <p><span class="status-label">Building now —</span> a drug-interaction checker for pharmacies in Liberia</p>
+    </div>
+  </aside>
+
+  <!-- Main column -->
+  <main id="top">
+
+    <section class="hero">
+      <h1>
+        I build software that has to work<br>
+        somewhere the internet is slow<br>
+        and the stakes aren't hypothetical.
+      </h1>
+      <p class="hero-sub">
+        Web and mobile apps, CI/CD pipelines, and a couple of tools built for
+        specific people in Liberia and Rwanda rather than a general audience.
+        Currently finishing a Software Engineering degree and taking on
+        freelance contract work.
+      </p>
+      <div class="hero-links">
+        <a href="#work" class="btn">See the work</a>
+        <a href="mailto:you@example.com" class="btn btn-ghost">Email me</a>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Selected work</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Rural pharmacy drug-interaction checker</h3>
+          <span class="project-tag">In development</span>
+        </div>
+        <p>
+          A lookup tool scoped to roughly 200 drugs commonly dispensed in
+          Liberian pharmacies, built to flag dangerous interactions at the
+          counter rather than in a hospital system. Started as a final-year
+          project idea, now being built as a real, standalone product.
+        </p>
+        <p class="project-meta">Python · SQLite</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Loving Arms for Liberia — website</h3>
+          <span class="project-tag">Client work</span>
+        </div>
+        <p>
+          Ongoing website management for a nonprofit, handling updates,
+          maintenance, and content changes as a contractor.
+        </p>
+        <p class="project-meta">Freelance · Web</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>My Study Planner</h3>
+          <span class="project-tag">Complete</span>
+        </div>
+        <p>
+          A Flutter study-planner app built across five phases, from static
+          UI through full local persistence. Adapted to also run as a
+          Windows desktop app using <code>sqflite_common_ffi</code>, with a
+          full defense presentation and Q&amp;A prep behind it.
+        </p>
+        <p class="project-meta">Flutter · SQLite · Windows desktop</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>CI/CD pipeline, group project</h3>
+          <span class="project-tag">Complete</span>
+        </div>
+        <p>
+          Owned the GitHub Actions pipeline for a group academic project:
+          matrix builds across Python 3.10 and 3.11, branch protection, and
+          secrets management, plus a Flask API covered by integration tests
+          in a separate CI/CD lab.
+        </p>
+        <p class="project-meta">GitHub Actions · Flask · Python</p>
+      </article>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I'm a Software Engineering student based in Kigali, working across
+        the stack — Python and Flask on the backend, React and Flutter on
+        the front end, SQLite for anything that needs to run without a
+        server nearby. A good part of my recent work has been CI/CD:
+        setting up pipelines that catch problems before they ship rather
+        than after.
+      </p>
+      <p>
+        I've debugged production issues from a phone browser, and I build
+        with the assumption that not everyone using what I make has a fast
+        connection or a new laptop. That constraint shapes most of my
+        decisions more than any framework does.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills &amp; tools</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>Flutter &amp; Dart</li>
+        <li>React</li>
+        <li>Node.js / Express</li>
+        <li>SQLite</li>
+        <li>GitHub Actions (CI/CD)</li>
+        <li>Flask</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <h2>Contact</h2>
+      <p>
+        Open to freelance and contract work, especially anything web,
+        mobile, or CI/CD related.
+      </p>
+      <ul class="contact-list">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>Built by Madz. Last updated <span id="year"></span>.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
