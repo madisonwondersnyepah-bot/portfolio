@@ -1,5 +1,3 @@
-export const config = { runtime: 'edge' };
-
 import { handleUpload } from '@vercel/blob/client';
 
 export default async function handler(request) {
