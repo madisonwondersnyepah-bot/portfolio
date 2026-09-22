@@ -12,7 +12,7 @@ if ('IntersectionObserver' in window && sections.length) {
         const id = entry.target.getAttribute('id');
         navLinks.forEach((link) => {
           link.style.color = link.getAttribute('href') === `#${id}`
-            ? 'var(--accent)'
+            ? 'var(--ink)'
             : '';
         });
       }
